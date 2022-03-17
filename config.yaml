@@ -1,0 +1,10 @@
+resources:
+  - group: example.io
+    version: v1alpha1
+    kind: Greeting
+    reconciler:
+      exec:
+        command: ./reconciler.py
+        args: ["-"]
+        debug: true
+    resyncPeriod: "1m"
