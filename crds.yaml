@@ -22,3 +22,8 @@ spec:
               properties:
                 message:
                   type: string
+            status:
+              type: object
+              properties:
+                phase:
+                  type: string
